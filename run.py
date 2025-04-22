@@ -2,7 +2,7 @@ import pandas as pd
 
 def load_data(file_path):
     return pd.read_csv(file_path)
-
+  
 def split_num_cat_data(df):
     return df.select_dtypes(include=['number']), df.select_dtypes(exclude=['number'])
 
