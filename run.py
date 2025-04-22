@@ -17,7 +17,7 @@ def save_data(numerical_df, categorical_df, metadata):
     categorical_df.to_csv("categorical_data.csv", index=False)
     with open("metadata.txt", "w") as f:
         f.write(str(metadata))
-
+   
 def run(file_path):
     df = load_data(file_path)
     numerical_df, categorical_df = split_num_cat_data(df)
