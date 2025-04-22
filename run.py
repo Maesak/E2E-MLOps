@@ -11,7 +11,7 @@ def generate_metadata(numerical_df, categorical_df):
         "numerical_shape": numerical_df.shape,
         "categorical_shape": categorical_df.shape
     }
-
+  
 def save_data(numerical_df, categorical_df, metadata):
     numerical_df.to_csv("numerical_data.csv", index=False)
     categorical_df.to_csv("categorical_data.csv", index=False)
