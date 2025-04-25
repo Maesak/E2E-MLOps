@@ -1,3 +1,5 @@
 .ipynb_checkpoints/
 mlops/
 *.csv
+metadata.txt
+__pycache__
