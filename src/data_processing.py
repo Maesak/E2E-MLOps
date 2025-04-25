@@ -3,15 +3,7 @@ import os
 import yaml
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import OneHotEncoder, MinMaxScaler
-
-def load_data(file_path):
-    try:
-        df = pd.read_csv(file_path)
-        print(f"Loaded data from {file_path}")
-        return df
-    except Exception as e:
-        print(f"Failed to load data from {file_path}: {e}")
-        return None
+from common.utils import load_data
 
 def split_num_cat(df):
     numerical = df.select_dtypes(include='number')

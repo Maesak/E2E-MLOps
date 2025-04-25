@@ -1,6 +1,7 @@
 import yaml
-from src.data_ingestion import load_data, split_data
+from src.data_ingestion import split_data
 from src.data_processing import process_train_data, process_test_data, save_processed_data
+from common.utils import load_data
 
 def run():
     try:
